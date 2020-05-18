@@ -18,5 +18,4 @@ CMD exec ss-local \
       -k ${PASSWORD:-$(hostname)} \
       -m $METHOD \
       -t $TIMEOUT \
-      -u \
       $ARGS
