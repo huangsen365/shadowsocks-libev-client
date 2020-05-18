@@ -8,7 +8,6 @@ ENV TIMEOUT     300
 ENV BIND_ADDR       0.0.0.0
 ENV BIND_PORT       7074
 ENV TZ UTC
-ENV ARGS=
 
 CMD exec ss-local \
       -b $BIND_ADDR \
@@ -17,5 +16,4 @@ CMD exec ss-local \
       -p $SERVER_PORT \
       -k ${PASSWORD:-$(hostname)} \
       -m $METHOD \
-      -t $TIMEOUT \
-      $ARGS
+      -t $TIMEOUT
