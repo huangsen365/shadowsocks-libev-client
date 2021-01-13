@@ -1,2 +1,3 @@
 # shadowsocks-libev-client
 shadowsocks libev client
+If it is ARM, then build the image locally...
